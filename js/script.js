@@ -1,3 +1,39 @@
+
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-item');
+const body = document.body;
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+    
+});
+
+navItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            if (e.target.classList.contains('nav-link') && item.querySelector('.dropdown')) {
+                e.preventDefault();
+                item.classList.toggle('active');
+            }
+        }
+    });
+});
+
+
+// ----------navbar end --------- 
+
+
+
+
+
+
 const slides = document.querySelectorAll(".slide");
 const track = document.querySelector(".thumbnails-track");
 const wrapper = document.querySelector(".thumbnails-wrapper");
@@ -108,3 +144,27 @@ sliderContainer.addEventListener("mouseleave", () => {
 
 // Handle window resize
 window.addEventListener("resize", () => centerCurrentSlide(true));
+
+
+// -------job slider ------- 
+
+const slider = document.getElementById('slider');
+let cardWidth = slider.children[0].offsetWidth + 20; // Width of each card including margin
+let intervalSpeed = 2000; // Interval speed in ms
+let interval;
+
+function startSlider() {
+    interval = setInterval(() => {
+        slider.style.transition = "transform 0.5s linear";
+        slider.style.transform = `translateX(-${cardWidth}px)`;
+
+        // After the transition ends, rearrange the cards
+        setTimeout(() => {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+            slider.appendChild(slider.children[0]); // Move the first card to the end
+        }, 500); // Match transition duration
+    }, intervalSpeed);
+}
+
+startSlider();

@@ -1,5 +1,7 @@
 @media (max-width: 768px) {
-
+    .logo{
+        width: auto;
+    }
     .banner_block {
         flex-direction: column;
         height: auto !important;
@@ -14,13 +16,37 @@
 
     }
 
+    .job_inner .heading h4{
+        font-size: 35px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+
+    .about_courses{
+        padding-inline: 10px;
+    }
+    .placement_inner .placement_left .placement_heading h4{
+        font-size: 35px;
+        line-height: 1.3em;
+        letter-spacing: 1px;
+    }
+
     .banner_heading h1 {
         font-size: 59px;
     }
 
-    .banner_sub_heading h2 {
-        font-size: 57px;
+    .banner_sub_heading h2{
+        font-size: 80px;
+        text-align: center;
     }
+    .banner_heading h1{
+        font-size: 80px;
+        text-align: center;
+    }
+    .placement_inner .main_content{
+        gap: 32px;
+    }
+    
 
     .banner_heading {
         padding: 0px 2px 0px 1px;
@@ -123,5 +149,23 @@
 
     .footer_inner ul li {
         width: 60%;
+    }
+}
+
+@media (max-width: 425px){
+    .banner_sub_heading h2{
+        font-size: 80px;
+        text-align: center;
+    }
+    .banner_heading h1{
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .banner_heading h1 {
+        font-size: 59px;
+    }
+    .banner_sub_heading h2 {
+        font-size: 57px;
     }
 }
