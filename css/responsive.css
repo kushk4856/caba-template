@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+
+    .banner_block {
+        flex-direction: column;
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_text_block {
+        padding-right: 0px;
+        width: 100%;
+
+    }
+
+    .banner_heading h1 {
+        font-size: 59px;
+    }
+
+    .banner_sub_heading h2 {
+        font-size: 57px;
+    }
+
+    .banner_heading {
+        padding: 0px 2px 0px 1px;
+        text-align: center;
+    }
+
+    .banner_sub_heading {
+        padding: 21px 0px 9px 0px;
+
+    }
+
+    /* -------------about section -----------  */
+    .about_inner {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .about_left_block {
+        width: 100%;
+    }
+
+    .about_right_block {
+        width: 100%;
+    }
+
+    .about_right_block .para {
+        text-align: center;
+    }
+
+    /* -------------- courses ------------  */
+    .about_courses {
+        flex-direction: column;
+        padding-inline: 10px;
+        gap: 10px;
+    }
+
+    .about_courses>div {
+        width: 100% !important;
+    }
+
+    .about_courses .left_content {
+        margin-right: 0px;
+    }
+
+    .about_courses .right_content {
+        margin-left: 0px;
+    }
+
+    .box_wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center_img img {
+        margin-block: 50px;
+    }
+
+    .guarantee_inner {
+        flex-direction: column;
+        padding-inline: 10px;
+    }
+
+    .guarantee_inner>div {
+        width: 100%;
+        padding-inline: 5px;
+        text-align: center;
+
+    }
+
+    .guarantee_right_block .badge_img {
+        padding-block: 10px;
+    }
+
+    /* -----------placement -----------  */
+    .placement_inner .main_content {
+        flex-direction: column;
+        padding-inline: 10px;
+    }
+
+    .placement_inner .main_content>div {
+        width: 100%;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+    /* -----------footer -------------  */
+    .footer_inner {
+        flex-direction: column;
+        padding-inline: 10px;
+        /* text-align: center; */
+        gap: 10px;
+    }
+
+    .footer_inner>div {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .footer_inner ul li {
+        width: 60%;
+    }
+}
