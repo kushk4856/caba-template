@@ -136,7 +136,7 @@ reusable code end
 
 .dropdown {
     position: absolute;
-    top: 150%;
+    top: 100%;
     left: 0;
     background: #e9e8e3;
     min-width: 200px;
