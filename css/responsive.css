@@ -1,14 +1,72 @@
-@media (max-width: 768px) {
+
+@media (max-width: 768px){
+
     .logo{
         width: auto;
     }
+
+    .nav-menu.active {
+        display: block;
+        height: 400px;
+    }
+    .guarantee_inner, #footer, #job, .courses_inner, .placement_inner{
+        padding: 10px;
+    }
+    .banner_heading h1{
+        font-size: 90px;
+        text-align: left;
+    }
+
+    
+    .banner_sub_heading{
+        margin-top: 40px;
+        
+        
+    }
+    .banner_sub_heading h2{
+        font-size: 95px;
+        line-height: 1;
+    }
+
+    .banner_text_block {
+        padding-right: 0px;
+    }
+
+    .footer_wrapper{
+        width: 100%;
+    }
+    .footer_inner{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer_inner .working_hours{
+        width: fit-content;
+        max-width: fit-content;
+    }
+    .course-card img{
+        width: 166px;
+    }
+
+
+}
+
+
+@media (max-width: 425px) {
+    
     .banner_block {
         flex-direction: column;
         height: auto !important;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
 
     .banner_text_block {
         padding-right: 0px;
@@ -31,21 +89,14 @@
         letter-spacing: 1px;
     }
 
-    .banner_heading h1 {
-        font-size: 59px;
-    }
+    
 
-    .banner_sub_heading h2{
-        font-size: 80px;
-        text-align: center;
-    }
+    
     .banner_heading h1{
         font-size: 80px;
         text-align: center;
     }
-    .placement_inner .main_content{
-        gap: 32px;
-    }
+  
     
 
     .banner_heading {
@@ -134,6 +185,14 @@
         padding-inline: 10px;
     }
 
+    .carousel-track{
+        padding-inline: 30px;
+    }
+
+    .card_slider{
+        padding-inline: 80px;
+    }
+
     /* -----------footer -------------  */
     .footer_inner {
         flex-direction: column;
@@ -150,6 +209,9 @@
     .footer_inner ul li {
         width: 60%;
     }
+    .carousel-next{
+        right: 14px;
+    }
 }
 
 @media (max-width: 425px){
@@ -157,15 +219,83 @@
         font-size: 80px;
         text-align: center;
     }
-    .banner_heading h1{
-        font-size: 80px;
-        text-align: center;
+   
+    .banner_sub_heading h2 {
+        font-size: 57px;
+    }
+
+    .carousel-slider-container {
+        padding-inline: 64px;
+    }
+    .card_slider{
+
+        padding-inline: 0px;
+    }
+    .carousel-track {
+        padding-inline: 0px;
+        gap: 50px;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .about_left_block , .about_right_block {
+        padding: 10px;
+    }
+    #courses{
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    .guarantee_left_block .heading h4{
+        font-size: 38px;
+    }
+    .guarantee_inner .para{
+        padding: 10px;
+    }
+    .placement_inner .para {
+        padding: 10px;
+    }
+
+    .placement_inner .card {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+
+    .main-slider{
+        aspect-ratio: unset;
+        height: 300px;
+    }
+    .carousel-prev {
+        left: 10px;
+    }
+    .carousel-next {
+        right: 0px;
+    }
+    .footer_inner .contact {
+        max-width: 50% !important;
+    }
+
+    .footer_inner .location  {
+        max-width: 50% !important;
+    }
+    .footer_wrapper{
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+    }
+
+    .placement_right{
+        padding-top: 40px;
+    }
+
+    .banner_sub_heading {
+        margin-top: 0px;
     }
 
     .banner_heading h1 {
         font-size: 59px;
     }
-    .banner_sub_heading h2 {
-        font-size: 57px;
-    }
+
+
 }
