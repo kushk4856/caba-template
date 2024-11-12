@@ -56,14 +56,14 @@ reusable code end
 .navbar {
     background: white;
     padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 9999 !important;
 }
 
-.navbar .svg_img{
+.navbar .svg_img {
     bottom: 0;
-  
+
     transform: rotate(180deg);
     overflow: hidden;
     position: absolute;
@@ -80,8 +80,9 @@ reusable code end
     /* transform: translateX(-50%) rotateY(180deg); */
     left: 50%;
 }
+
 .nav-container {
-    max-width: 1140px;  
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -96,7 +97,7 @@ reusable code end
     text-decoration: none;
     color: #333;
     width: 21%;
-    
+
 }
 
 .logo img {
@@ -198,7 +199,7 @@ reusable code end
         background: white;
         flex-direction: column;
         padding: 20px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -206,8 +207,8 @@ reusable code end
         padding-top: 40px;
         z-index: 9;
         height: 100vh;
-        
-       
+
+
     }
 
     .dropdown {
@@ -308,7 +309,8 @@ hero section start
     line-height: 1;
     font-style: normal;
 }
-.banner_sub_heading{
+
+.banner_sub_heading {
     width: 100%;
 }
 
@@ -386,7 +388,7 @@ hero section start
     border-radius: 4px;
 }
 
-.phone_field{
+.phone_field {
     border: none;
 }
 
@@ -743,18 +745,19 @@ Guarantee Section
     margin-block-end: .9rem;
 }
 
-.placement_button{
+.placement_button {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .placement_button .free_btn:hover {
-background-color: #4323aa;
+    background-color: #4323aa;
 }
+
 .placement_button .call_btn:hover {
     background-color: #d6216e;
-    }
+}
 
 
 .placement_inner .button-container {
@@ -767,9 +770,9 @@ background-color: #4323aa;
     overflow: hidden;
     background: linear-gradient(90deg, #562dd4 0%, #ff3366 100%);
     position: relative;
-  }
+}
 
-  .placement_inner .button {
+.placement_inner .button {
     flex: 1;
     height: 100%;
     border: none;
@@ -784,16 +787,16 @@ background-color: #4323aa;
     align-items: center;
     justify-content: center;
     text-wrap: nowrap;
-  }
+}
 
-  .placement_inner .divider-container {
+.placement_inner .divider-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .placement_inner .divider {
+.placement_inner .divider {
     background: white;
     width: 40px;
     height: 40px;
@@ -806,10 +809,10 @@ background-color: #4323aa;
     position: relative;
     z-index: 2;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
-  }
+}
 
-  /* Additional glow effect */
-  .placement_inner .divider::before {
+/* Additional glow effect */
+.placement_inner .divider::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -821,11 +824,11 @@ background-color: #4323aa;
     z-index: -1;
     filter: blur(4px);
     opacity: 0.4;
-  }
+}
 
 
 /* *********slider ******** */
-.slider-container {
+.slider_block {
     margin: 0 auto;
     position: relative;
     padding-inline: 20px;
@@ -841,13 +844,10 @@ background-color: #4323aa;
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.5s ease-in-out;
 }
 
-.slide.active {
-    opacity: 1;
-}
 
 .slide img {
     width: 100%;
@@ -941,48 +941,54 @@ job section
 =====================
  */
 
- #job {
+#job {
     margin-top: 40px;
 
- }
+}
 
- .job_inner{
+.job_inner {
     max-width: 1140px;
     margin: auto;
- }
+}
 
- .job_inner .heading {
+.job_inner .heading {
     text-align: center;
     margin-bottom: 20px;
- }
+}
 
- .job_inner .heading h4 {
+.job_inner .heading h4 {
     color: #444444;
     font-size: 44px;
     font-weight: 400;
     text-transform: uppercase;
- }
+}
 
 
- .slider-container {
+.slider-container {
     overflow: hidden;
     width: 100%;
     position: relative;
 }
+
 .slider {
     display: flex;
     transition: transform 0.5s linear;
     justify-content: space-between;
-    gap: 40px;
+    /* gap: 40px; */
 }
+
 .course-card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    width: 600px; /* Adjust width as needed */
-    margin: 20px auto; /* Center the card */
-    background-color: #fff; /* Set background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    width: 600px;
+    /* Adjust width as needed */
+    margin: 20px auto;
+    /* Center the card */
+    background-color: #fff;
+    /* Set background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect */
     text-align: center;
     position: relative;
 }
@@ -1000,13 +1006,15 @@ job section
 }
 
 .course-card img {
-    width: 200px; /* Make image full width */
+    width: 200px;
+    /* Make image full width */
     border-radius: 5px;
 }
 
 .course-card .card_content {
     margin-top: 40px;
 }
+
 .course-card h2 {
     font-size: 20px;
     margin-top: 10px;
@@ -1020,7 +1028,8 @@ job section
 }
 
 .course-details {
-    background-color: #A40000; /* Set button color */
+    background-color: #A40000;
+    /* Set button color */
     color: #fff;
     border-width: 0px;
     border-color: #FF8A04;
@@ -1035,10 +1044,11 @@ job section
     transition: all .3s ease;
 }
 
-.course-details:hover{
+.course-details:hover {
     background-color: #f57f7f;
 }
- /* 
+
+/* 
 ======================
 job section end
 =====================
@@ -1166,3 +1176,181 @@ job section end
  ====================
 
   */
+
+
+.slider-container {
+    overflow: hidden;
+    /* width: 80%; */
+    max-width: 900px;
+    position: relative;
+    padding-block: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    flex: 0 0 20%;
+    /* Change from 33.33% to 20% for 5 images */
+    max-width: 20%;
+    /* Adjust max-width to 20% */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* margin: 0 10px; */
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    padding: 10px 0;
+}
+
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.fade-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0.5;
+}
+
+
+/* --------next slider ----------  */
+
+.carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-fade-out {
+    opacity: 0;
+}
+
+/* Navigation Buttons */
+.carousel-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Slider Container */
+.carousel-slider-container {
+    overflow: hidden;
+    max-width: 900px;
+    position: relative;
+    padding-block: 10px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Card Styling */
+.course-card {
+    flex: 0 0 20%;
+    max-width: 20%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    aspect-ratio: 1/1.5;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+.course-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-card-details {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.course-card-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.course-card-info {
+    font-size: 0.9em;
+    color: #555;
+    margin: 4px 0;
+}
+
+.course-card-button {
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.course-card-button:hover {
+    background-color: #a00;
+}
